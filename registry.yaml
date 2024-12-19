@@ -516,3 +516,30 @@ plugins:
         source: keycloak
       extraction:
         supported: true
+
+  - name: k8saudit-ovh
+    description: Read Kubernetes Audit Events from OVHcloud MKS Clusters
+    authors: Aurélie Vache
+    contact: https://scraly.com/
+    maintainers:
+      - name: Aurélie Vache
+        email: scraly@gmail.com
+    url: https://github.com/scraly/k8saudit-ovh/
+    rules_url: https://github.com/falcosecurity/plugins/tree/main/plugins/k8saudit/rules
+    license: Apache-2.0
+    keywords:
+      - audit
+      - audit-log
+      - audit-events
+      - kubernetes
+      - mks
+      - ovh
+      - ovhcloud
+      - k8saudit-ovh
+    capabilities:
+      sourcing:
+        supported: true
+        id: 21
+        source: k8s_audit
+      extraction:
+        supported: true
