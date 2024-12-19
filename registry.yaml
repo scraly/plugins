@@ -539,7 +539,7 @@ plugins:
     capabilities:
       sourcing:
         supported: true
-        id: 21
+        id: 22
         source: k8s_audit
       extraction:
         supported: true
